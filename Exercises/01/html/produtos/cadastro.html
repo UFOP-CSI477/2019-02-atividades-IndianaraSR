@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Cadastro de produtos</h1>
+    <form action="">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" placeholder="Digite o nome do produto" />
+        <br>
+
+        <label for="desc">Descrição</label>
+        <input type="text" id="desc" placeholder="Digite uma descrição para o produto" />
+        <br>
+        
+        <label for="peso">Peso</label>
+        <input type="number" id="peso" placeholder="Digite o peso do produto" />
+        <br>
+        
+        <label for="und">Unidade de medida</label>
+        <input type="text" id="und" placeholder="Digite a unidade de medida" />
+        <br>
+
+        <label for="valor">Valor</label>
+        <input type="text" id="valor" placeholder="Digite o valor do produto" />
+        <br>
+
+        <label for="estoque_inicial">Estoque inicial</label>
+        <input type="number" id="estoque_inicial" placeholder="Digite a quantidade no estoque inicial" />
+        <br>
+
+        <label for="tipo_mercado">Selecione o tipo de mercado:</label>
+        <div id="tipo_mercado">
+            <input type="radio" id="interno" name="tipo" value="interno">
+            <label for="interno">Interno</label>
+            <br>
+        
+            <input type="radio" id="externo" name="tipo" value="externo">
+            <label for="externo">Externo</label>
+            <br>
+        </div>
+
+        <label for="fornecedor">Fornecedor</label>
+        <select>
+            <option value="fornecedor_1">Fornecedor 1</option>
+            <option value="fornecedor_2">Fornecedor 2</option>
+            <option value="fornecedor_3">Fornecedor 3</option>
+            <option value="fornecedor_4">Fornecedor 4</option>
+            <option value="fornecedor_5">Fornecedor 5</option>
+        </select>
+    
+        <input type="submit" value="Cadastrar" />
+    </form>
+</body>
+</html>

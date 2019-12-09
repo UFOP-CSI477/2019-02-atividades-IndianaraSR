@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../css//App.css" />
+    <link rel="stylesheet" href="../../css/Formulario.css" />
+    <title>Document</title>
+</head>
+<body>
+    <div id="title-container">
+        <img src="../../assets/ecommerce.svg" />
+        <label>Cadastro de produtos</label>
+    </div>
+
+    <nav class="main">
+        <ul>
+            <li><a href="../home.html">Página Inicial</a></li>
+            <li>
+                Produtos
+                <ul>
+                    <li><a href="cadastro.html">Cadastrar</a></li>
+                    <li><a href="listar.html">Listar</a></li>
+                </ul>
+                </li>
+                <li>
+                Clientes
+                <ul>
+                    <li><a href="../clientes/cadastro.html">Cadastrar</a></li>
+                    <li><a href="../clientes/listar.html">Listar</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <label class="title">Formulário</label>
+        <form action="">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" />
+            <br>
+
+            <label for="desc">Descrição</label>
+            <textarea id="desc"></textarea>
+            <br>
+            
+            <label for="peso">Peso</label>
+            <input type="number" id="peso" />
+            <br>
+            
+            <label for="und">Unidade de medida</label>
+            <input type="text" id="und" />
+            <br>
+
+            <label for="valor">Valor</label>
+            <input type="text" id="valor" />
+            <br>
+
+            <label for="estoque_inicial">Estoque inicial</label>
+            <input type="number" id="estoque_inicial" />
+            <br>
+
+            <label for="radio-container">Selecione o tipo de mercado:</label>
+            <div id="radio-container">
+                <div>
+                    <input type="radio" id="interno" name="tipo" value="interno" checked>
+                    <label for="interno">Interno</label>
+                </div>
+                <br>
+            
+                <div>
+                    <input type="radio" id="externo" name="tipo" value="externo">
+                    <label for="externo">Externo</label>
+                </div>
+                <br>
+            </div>
+
+            <label for="fornecedor">Fornecedor</label>
+            <select>
+                <option value="fornecedor_1">Fornecedor 1</option>
+                <option value="fornecedor_2">Fornecedor 2</option>
+                <option value="fornecedor_3">Fornecedor 3</option>
+                <option value="fornecedor_4">Fornecedor 4</option>
+                <option value="fornecedor_5">Fornecedor 5</option>
+            </select>
+        
+            <input type="submit" value="Cadastrar" class="btn-animation" />
+        </form>
+    </div>
+</body>
+</html>

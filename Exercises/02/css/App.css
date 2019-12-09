@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+html, body, #root {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFF;
+}
+
+body, input, button {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif; 
+}
+
+#title-container {
+    background: cadetblue;
+    min-height: 80px;
+    height: 80px;
+    max-height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#title-container img {
+    height: 40px;
+    margin-bottom: 5px;
+    margin-right: 15px;
+}
+
+#title-container label {
+    font-size: 22px;
+    font-weight: 700;
+    color: black;
+    text-transform: lowercase;
+    align-self: center;
+    
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 50px;
+    font-size: 14px;
+}
+
+.content label.title {
+    font-size: 22px;
+    font-variant: small-caps;
+    font-weight: 700;
+    padding: 0 0 5px 20px;
+}
+
+/** Nav menu container **/
+
+nav.main {
+    cursor: default;
+}
+
+nav.main, nav.main a {
+    color: black;
+    font-size: 15px;
+    font-variant: small-caps;
+    font-weight: 500;
+}
+
+nav.main a {
+    display: block;
+    text-decoration: none;
+}
+
+nav.main ul {
+    display: flex;
+
+    list-style: none;
+
+    justify-content: space-around;
+
+    background: rgb(85, 116, 117);
+}
+
+nav.main ul {
+    flex: 1;
+    text-align: center;
+}
+
+nav.main ul li {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+nav.main ul li:hover {
+    background: rgb(77, 107, 107);
+}
+
+nav.main ul li:hover ul {
+    visibility: visible;
+    opacity: 1;
+}
+
+nav.main ul ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top:120px;
+    list-style: none;
+    opacity: 0;
+    visibility: hidden;
+
+    padding: 20px;
+    min-width: 250px;
+    max-width: 350px;
+    background-color: rgba(92, 91, 87, 1);
+    -webkit-transition: opacity 300ms, visibility 300ms;
+    transition: opacity 300ms, visibility 300ms;
+}
+
+nav.main ul ul li:hover {
+    background: rgb(85, 84, 81);
+}
